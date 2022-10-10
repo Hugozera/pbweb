@@ -6,11 +6,8 @@
 }
 
 body {
-    background-color: rgba(54, 97, 73, 0.288);
-    background-size: 500%;
-    background: url("imagens/coffe.gif") no-repeat;
-    background-color: #b7f1d0; 
-    color: #1a2422;
+    background-color: #b6f5d1;
+
 }
 
 .table {
@@ -268,11 +265,13 @@ table td {
     margin-left: 50px;
     margin-bottom: 0;
 }
-.titulosind{
+
+.titulosind {
     text-align: center;
     padding-top: 20px;
     border-bottom: #000 solid 1px;
 }
+
 .textoind {
     padding-top: 30px;
     text-align: center;
@@ -288,10 +287,17 @@ table td {
 }
 
 .comebackind a {
+    border: #000 solid 1px;
+    background-color: #000000;
     margin: 70px 0 0 0;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    text-decoration: none;
+    color: #000;
+}
+
+.comebackind a:hover {
+    color: red;
+    cursor: pointer;
 }
 
 .button h1,
@@ -352,15 +358,6 @@ th {
     transition: 1s
 }
 
-.NAV {
-    background-color: rgb(56, 42, 42);
-    width: 350px;
-    height: 100%;
-    left: -350px;
-    /* position: relative; */
-
-}
-
 .NAV a {
     text-decoration: none;
     display: block;
@@ -407,38 +404,124 @@ nav {
     padding: 10px 10px;
 }
 
-.navbar img {
+.navbar .imgrisco {
+    height: 30px;
     width: 30px;
+    padding-left: 1px;
+    border-radius: 0%;
 }
 
 .nav-lateral {
     background-color: #1a2422;
     width: 25%;
-    height: 92vh;
+    height: 48vh;
     transition: all .70s;
     margin-left: -30%;
 }
 
 .imgh {
-    padding-left: 1143px;
     height: 0px;
-    width: 150px;
+    padding-left: 81%;
+    width: 20%;
+}
+
+.imgh img {
+    border: #000 solid 3px;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: rgb(170, 147, 192);
 }
 
 .active {
     margin-left: 0%;
 }
-.dropcontent{
+
+.dropcontent {
     display: none;
 }
-.dropcontent a{
+
+.dropcontent a {
     color: white;
-        padding: 8px 10px;
-        text-decoration: none;
-        display: block;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
 }
 
 .NAV li:hover .dropcontent {
     display: block;
+}
+
+/*Ajusde da tela para smartphones*/
+@media screen and (max-width:480) {
+    body {
+        max-width: 480px;
+        font-size: 1.0em;
+    }
+
+    .navbar {
+        font-family: fantasy;
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        background-color: #0e1413;
+
+        /* position: relative; */
+        padding: 10px 10px;
+    }
+
+    .navbar .imgrisco {
+        width: 300px;
+        border-radius: 0%;
+    }
+
+    .nav-lateral {
+        background-color: #1a2422;
+        width: 5%;
+        height: 30vh;
+        transition: all .70s;
+        margin-left: -5%;
+    }
+
+
+    .active {
+        margin-left: 0%;
+    }
+
+    .dropcontent {
+        display: none;
+    }
+
+    .dropcontent a {
+        color: white;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .NAV li:hover .dropcontent {
+        display: block;
+    }
+}
+
+.Cards h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 50px;
+}
+
+.Cards a, img{
+    width: 150px;
+    height: 150px;
+    border-radius: 40px;
+}
+
+section{
+    display: flex;
+   flex-flow: row wrap;
+}
+article{
+    padding-left: 170px;
+    margin: 10px;
+    flex: 150px;
 }
 
